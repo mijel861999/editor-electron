@@ -1,10 +1,11 @@
 {
   "name": "text-editor-electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "An app for edit text",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "NODE_ENV=development electron .",
+    "build": "electron-builder"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "devDependencies": {
     "electron": "^19.0.8",
     "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "electron-acrylic-window": "^0.5.11"
   }
 }
